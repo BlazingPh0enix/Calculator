@@ -1,21 +1,23 @@
 .calculator {
-  max-width: 250px;
-  margin: 50px auto;
-  border: 1px solid #ccc;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 2px solid #3498db;
   border-radius: 10px;
-  padding: 20px;
   background-color: #f0f0f0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 input[type="text"] {
   width: calc(100% - 20px);
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: right;
+  background-color: #f8f8f8;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .buttons {
@@ -32,24 +34,26 @@ input[type="text"] {
 
 button {
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-  background-color: #e6e6e6;
+  background-color: #e0e0e0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .result {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   text-align: right;
-  margin: 10px 0;
+  margin: 5px 0px 10px 0px;
 }
+
 
 button.C {
   background-color: #ff5151;
