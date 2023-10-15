@@ -1,51 +1,82 @@
 .calculator {
-    max-width: 250px; 
-    margin: 50px auto; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  input[type="text"] {
-    width: calc(100% - 20px); 
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: right;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
+  max-width: 250px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .clear-buttons{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .result {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-    margin: 5px 0px 10px 0px;
-  }
-  
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.clear-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin: 10px 0;
+}
+
+button.C {
+  background-color: #ff5151;
+  color: #fff;
+  font-weight: bold;
+}
+
+button.C:hover {
+  background-color: #ff0000;
+}
+
+button.eq {
+  background-color: #0084ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+button.eq:hover {
+  background-color: #0066cc;
+}
+
+button.operator {
+  background-color: #f0f0f0;
+  color: #000;
+  font-weight: bold;
+}
+
+button.operator:hover {
+  background-color: #ccc;
+}
