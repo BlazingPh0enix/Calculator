@@ -40,6 +40,8 @@ button {
   background-color: #fff;
   cursor: pointer;
   transition: background-color 0.2s, box-shadow 0.2s;
+  font-weight: normal;
+  color: #000;
 }
 
 button:hover {
@@ -59,6 +61,7 @@ button.C {
   background-color: #ff5151;
   color: #fff;
   font-weight: bold;
+  border: 1px solid #ff0000;
 }
 
 button.C:hover {
@@ -69,6 +72,7 @@ button.eq {
   background-color: #0084ff;
   color: #fff;
   font-weight: bold;
+  border: 1px solid #0066cc;
 }
 
 button.eq:hover {
@@ -77,8 +81,9 @@ button.eq:hover {
 
 button.operator {
   background-color: #f0f0f0;
-  color: #000;
+  color: #333;
   font-weight: bold;
+  border: 1px solid #ccc;
 }
 
 button.operator:hover {
